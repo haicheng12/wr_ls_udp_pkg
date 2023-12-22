@@ -3,7 +3,6 @@
 **新增的功能**
 
 ```
-
 1、修改雷达发布频率
 2、调整雷达滤波
 
@@ -12,7 +11,6 @@
 **功能测试**
 
 ```
-
 启动单线雷达：
 $ roslaunch livox_ros_driver livox_lidar_rviz_with_1_lidar.launch
 ```
@@ -21,7 +19,6 @@ $ roslaunch livox_ros_driver livox_lidar_rviz_with_1_lidar.launch
 **修改雷达的发布频率**
 
 ```
-
 启动完成雷达节点之后:
 $ rosrun rqt_reconfigure reconfigure
 
@@ -31,7 +28,6 @@ $ rosrun rqt_reconfigure reconfigure
 **雷达滤波**
 
 ```
-
 如果需要滤调雷达的一些激光数据，启动：
 $ roslaunch laser_filters shadow_filter_example.launch 
 
