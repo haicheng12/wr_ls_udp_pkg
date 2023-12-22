@@ -13,6 +13,10 @@
 ```
 启动单线雷达：
 $ roslaunch livox_ros_driver livox_lidar_rviz_with_1_lidar.launch
+
+打开RVIZ:
+$ rviz
+在RVIZ中frame_id选择laser，add添加/scan的话题即可查看雷达数据
 ```
 
 
@@ -30,6 +34,8 @@ $ rosrun rqt_reconfigure reconfigure
 ```
 如果需要滤调雷达的一些激光数据，启动：
 $ roslaunch laser_filters shadow_filter_example.launch 
+
+在RVIZ中frame_id选择laser，add添加/scan_filtered的话题即可查看雷达数据
 
 通过修改laser_filters/examples/shadow_filter_example.yaml中的neighbors值的大小来调整所需滤波的大小
 
